@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./components/Home/home";
 import Login from "./components/Login/login";
 import Profile from "./components/Profile/profile";
+import Settings from "./components/Settings/settings"
 import "./App.css";
 
 const App = () => {
@@ -20,6 +21,9 @@ const App = () => {
 					<li>
 						<Link to="/profile">Profile</Link>
 					</li>
+					<li>
+						<Link to="/settings">Settings</Link>
+					</li>
 				</ul>
 				<hr />
 
@@ -27,6 +31,7 @@ const App = () => {
 					<Route path="/" element={<Home />} />
 					<Route path="/login" element={<Login />} />
 					<Route path="/profile" element={<Profile />} />
+					<Route path="/settings" element={<Settings />} />
 				</Routes>
 			</div>
 		</Router>
