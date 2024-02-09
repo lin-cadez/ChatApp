@@ -22,7 +22,7 @@ app.get("/datum", (req, res) => {
 });
 
 app.get("/leto", (req, res) => {
-	leto = new Date();
+	var leto = new Date();
 	res.json({
 		message: "leto: " + leto.getFullYear(),
 		error: false,
