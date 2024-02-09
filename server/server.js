@@ -5,8 +5,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.get("/api", (req, res) => {
+    const start = Date.now();
   res.json({
-    message: "Welcome to the API",
+    message: start,
     error: false
   });
 
