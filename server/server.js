@@ -11,7 +11,7 @@ app.get("/api", (req, res) => {
 	});
 });
 
-app.get("/api/jakec", (req, res) => {
+app.get("/jakec", (req, res) => {
 	res.json({
 		message: "Sup lil nigga",
 		error: false,
