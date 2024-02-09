@@ -36,6 +36,14 @@ app.get("/jakec", (req, res) => {
 	});
 });
 
+app.get("/cas", (req, res) => {
+    const start = Data.now();
+    res.json({
+    message: "ura je "+ start,
+    error: false,
+   })
+  });
+
 app.listen(5000, () => {
 	console.log("server started on port 5000");
 });
