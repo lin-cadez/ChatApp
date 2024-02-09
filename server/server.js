@@ -15,7 +15,7 @@ app.get("/api", (req, res) => {
 });
 
 app.get("/leto", (req, res) => {
-  leto = new Date;
+  const leto = new Date();
   res.json({
     message: "leto: " + leto.getFullYear(),
     error: false
