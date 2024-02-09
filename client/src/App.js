@@ -3,13 +3,13 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./components/Home/home";
 import Login from "./components/Login/login";
 import Profile from "./components/Profile/profile";
-import Settings from "./components/Settings/settings"
+import Settings from "./components/Settings/settings";
 import "./App.css";
 
 const App = () => {
 	return (
 		<Router>
-			<div>
+			<nav>
 				<h1>React Router Example</h1>
 				<ul>
 					<li>
@@ -25,15 +25,14 @@ const App = () => {
 						<Link to="/settings">Settings</Link>
 					</li>
 				</ul>
-				<hr />
+			</nav>
 
-				<Routes>
-					<Route path="/" element={<Home />} />
-					<Route path="/login" element={<Login />} />
-					<Route path="/profile" element={<Profile />} />
-					<Route path="/settings" element={<Settings />} />
-				</Routes>
-			</div>
+			<Routes>
+				<Route path="/" element={<Home />} />
+				<Route path="/login" element={<Login />} />
+				<Route path="/profile" element={<Profile />} />
+				<Route path="/settings" element={<Settings />} />
+			</Routes>
 		</Router>
 	);
 };
