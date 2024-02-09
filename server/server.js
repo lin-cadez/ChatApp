@@ -11,13 +11,6 @@ app.get("/api", (req, res) => {
 	});
 });
 
-app.get("/jakec", (req, res) => {
-	res.json({
-		message: "Sup lil nigga",
-		error: false,
-	});
-});
-
 app.listen(5000, () => {
 	console.log("server started on port 5000");
 });
