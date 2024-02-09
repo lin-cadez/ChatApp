@@ -2,7 +2,6 @@ import express from "express";
 
 const app = express();
 
-
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
@@ -14,11 +13,11 @@ app.get("/api", (req, res) => {
 });
 
 app.get("/datum", (req, res) => {
-    var today = new Date();
-  res.json({
-    datum: today,
-    error: false
-  });
+	var today = new Date();
+	res.json({
+		datum: today,
+		error: false,
+	});
 });
 
 app.get("/leto", (req, res) => {
