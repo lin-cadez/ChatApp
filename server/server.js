@@ -5,7 +5,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.get("/api", (req, res) => {
-  res.send("Hello World");
+  res.json({
+    message: "Welcome to the API",
+    error: false
+  });
 
 });
 
