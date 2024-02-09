@@ -8,20 +8,20 @@ import "./App.css";
 
 const App = () => {
 	return (
-		<Router>
-			<div>
+		<Router >
+			<div class="menu-main">
 				<h1>React Router Example</h1>
-				<ul>
-					<li>
+				<ul class="menu">
+					<li class="menu-item">
 						<Link to="/">Home</Link>
 					</li>
-					<li>
+					<li class="menu-item">
 						<Link to="/login">Login</Link>
 					</li>
-					<li>
+					<li class="menu-item">
 						<Link to="/profile">Profile</Link>
 					</li>
-					<li>
+					<li class="menu-item">
 						<Link to="/settings">Settings</Link>
 					</li>
 				</ul>
