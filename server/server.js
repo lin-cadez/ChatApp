@@ -14,6 +14,13 @@ app.get("/api", (req, res) => {
 
 });
 
+app.get("/datum", (req, res) => {
+  res.json({
+    datum: today,
+    error: false
+  });
+});
+
 app.get("/leto", (req, res) => {
   leto = new Date;
   res.json({
