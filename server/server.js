@@ -1,5 +1,5 @@
 import express from "express";
-import { readDB } from "./functions/readDb";
+import { readDB } from "./functions/readDb.js";
 
 const app = express();
 
@@ -45,7 +45,11 @@ app.get("/cas", (req, res) => {
   });
 
 
-get.
+  app.get("/api/readDB", (req, res) => {
+    const odziv = readDB();
+    res.json(odziv);
+  });
+
 
 app.listen(5000, () => {
 	console.log("server started on port 5000");
