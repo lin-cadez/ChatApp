@@ -1,4 +1,5 @@
 import express from "express";
+import { readDB } from "./functions/readDb";
 
 const app = express();
 
@@ -42,6 +43,9 @@ app.get("/cas", (req, res) => {
     error: false,
    })
   });
+
+
+get.
 
 app.listen(5000, () => {
 	console.log("server started on port 5000");
