@@ -1,6 +1,7 @@
 import express from "express";
 
 const app = express();
+var today = new Date();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -13,15 +14,22 @@ app.get("/api", (req, res) => {
 
 });
 
-app.get("/api/leto", (req,res) => {
-  const year = new Date();
-  
+app.get("/leto", (req, res) => {
+  leto = new Date;
   res.json({
-    
-    
-    message:"leto: " + year.getFullYear(),
+    message: "leto: " + leto.getFullYear(),
     error: false
   });
+
+});
+
+
+
+app.get("/jakec", (req, res) => {
+	res.json({
+		message: "Sup lil nigga",
+		error: false,
+	});
 });
 
 
