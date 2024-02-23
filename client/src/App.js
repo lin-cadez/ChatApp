@@ -9,19 +9,19 @@ import "./App.css";
 const App = () => {
 	return (
 		<Router>
-			<div>
-				<h1>React Router Example</h1>
-				<ul>
-					<li>
+			<div class="topnav">
+				<h1>React</h1>
+				<ul class="nav">
+					<li class="nav_item">
 						<Link to="/">Home</Link>
 					</li>
-					<li>
+					<li class="nav_item">
 						<Link to="/login">Login</Link>
 					</li>
-					<li>
+					<li class="nav_item">
 						<Link to="/profile">Profile</Link>
 					</li>
-					<li>
+					<li class="nav_item">
 						<Link to="/settings">Settings</Link>
 					</li>
 				</ul>
